@@ -1,0 +1,11 @@
+const wallets = {
+  'my-wallet': { // Id for report filenames
+    'xpub': 'XPUBKEY', // Extended public key of your HD wallet
+    'addrEnc': '', // Optional. Address encoding: 'p2pkh'|'p2wpkh-in-p2sh'|'p2wpkh'
+    'addrIdxFrom': 0, // First address idx
+    'addrIdxTo': 90000, // Last address idx
+    'blockHeightFrom': 100000 // Height to scan blocks from
+  }
+}
+
+module.exports = wallets

@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# wallets config
+/wallets.js
+
+# directory for generated reports
+output

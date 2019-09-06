@@ -1,0 +1,23 @@
+{
+  "name": "Gap-Scanner",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"node -r dotenv/config index.js\"",
+    "start": "node -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/alexk111/Gap-Scanner.git",
+  "author": "alexk111 <alexk111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bitcoin-core": "^2.2.0",
+    "bitcoinjs-lib": "^5.1.6",
+    "bs58check": "^2.1.2",
+    "dotenv": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
