@@ -7,13 +7,13 @@
 	<br>
 </div>
 
-HD Wallet Scanner is a utility for resolving [Account Discovery](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#account-discovery) issue when HD Wallet has more than X (usually 20) unused addresses in a row and a wallet software stops seeing addresses beyond this point.
+HD Wallet Scanner is a utility for resolving an [Account Discovery](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#account-discovery) issue when a HD Wallet has more than X (usually 20) unused addresses in a row and a wallet software stops seeing addresses beyond this point.
 
 The utility was made to supplement [One-Time Address](https://github.com/alexk111/One-Time-Address). However it will also be helpful if you encounter the gap limit issue in other circumstances.
 
 ## How it works
 
-1. You set an extended public key, a range for address indexes and a starting block for each of your HD Wallet
+1. You set an extended public key, a range for address indexes and a starting block for each of your HD Wallets
 2. HD Wallet Scanner scans blocks and generates report files with address indexes and input stats in ```output``` directory
 3. You use Bitcoin Core + HWI (if you use a hardware wallet) to import child keys derived with the address indexes and then spend unspent outputs
 
