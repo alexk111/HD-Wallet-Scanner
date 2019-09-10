@@ -18,7 +18,7 @@ async function getBlockTxs (blockHeight) {
 async function scanAllAddresses (blockHeightFrom, blockHeightTo) {
   console.log('Start scanning addresses')
   for (let blockHeight = blockHeightFrom; blockHeight <= blockHeightTo; blockHeight++) {
-    console.log(`Processing Block. Height ${blockHeight}/${blockHeightTo}. Progress ${(blockHeight - blockHeightFrom) / (blockHeightTo - blockHeightFrom)}`)
+    console.log(`Processing Block. Height ${blockHeight}/${blockHeightTo}. Progress ${((blockHeight - blockHeightFrom) / (blockHeightTo - blockHeightFrom)).toFixed(4)}`)
     const txs = await getBlockTxs(blockHeight)
     txs.forEach(tx => {
       tx.outs.forEach(output => {
@@ -62,8 +62,8 @@ async function scan () {
     }
 
     for (let addrIdx = wallet.addrIdxFrom; addrIdx <= wallet.addrIdxTo; addrIdx++) {
-      if (allAddresses.size % 20000 === 0) {
-        console.log('Generating addresses: ' + allAddresses.size)
+      if (addrIdx % 2000 === 0) {
+        console.log(`Generating addresses for ${wallet.id}; idxs ${addrIdx}...`)
       }
       const addr = wallet.generateAddress(addrIdx)
       allAddresses.set(addr, { addrIdx, wallet })
