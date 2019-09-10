@@ -1,5 +1,5 @@
 {
-  "name": "Gap-Scanner",
+  "name": "hd-wallet-scanner",
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "start": "node -r dotenv/config index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/alexk111/Gap-Scanner.git",
+  "repository": "https://github.com/alexk111/HD-Wallet-Scanner.git",
   "author": "alexk111 <alexk111@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
