@@ -18,6 +18,21 @@
     "dotenv": "^8.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "prettier": "^2.2.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "printWidth": 120,
+    "proseWrap": "always",
+    "importSort": {
+      ".js, .jsx, .ts, .tsx": {
+        "style": "module"
+      }
+    }
   }
 }
